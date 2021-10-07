@@ -13,6 +13,8 @@
 		BB1B69BC270D97BC0096F1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1B69BA270D97BC0096F1E9 /* Main.storyboard */; };
 		BB1B69BE270D97BE0096F1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1B69BD270D97BE0096F1E9 /* Assets.xcassets */; };
 		BB1B69C1270D97BE0096F1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB1B69BF270D97BE0096F1E9 /* LaunchScreen.storyboard */; };
+		BBF4EE5A270EB37D0097FF0D /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4EE59270EB37D0097FF0D /* CalcViewController.swift */; };
+		BBF4EE5C270EC7930097FF0D /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBF4EE5B270EC7930097FF0D /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		BB1B69BD270D97BE0096F1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB1B69C0270D97BE0096F1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB1B69C2270D97BE0096F1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBF4EE59270EB37D0097FF0D /* CalcViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
+		BBF4EE5B270EC7930097FF0D /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BB1B69BD270D97BE0096F1E9 /* Assets.xcassets */,
 				BB1B69BF270D97BE0096F1E9 /* LaunchScreen.storyboard */,
 				BB1B69C2270D97BE0096F1E9 /* Info.plist */,
+				BBF4EE59270EB37D0097FF0D /* CalcViewController.swift */,
+				BBF4EE5B270EC7930097FF0D /* Calculator.swift */,
 			);
 			path = Calc;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB1B69B9270D97BC0096F1E9 /* ViewController.swift in Sources */,
+				BBF4EE5A270EB37D0097FF0D /* CalcViewController.swift in Sources */,
 				BB1B69B5270D97BC0096F1E9 /* AppDelegate.swift in Sources */,
+				BBF4EE5C270EC7930097FF0D /* Calculator.swift in Sources */,
 				BB1B69B7270D97BC0096F1E9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
