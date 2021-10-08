@@ -41,8 +41,16 @@ class CalcViewController: UIViewController {
     }
     
     
+    let calculator = Calculator()
+    
     @IBAction func operatorPressed(_ sender: UIButton) {
-        
+        if let op = sender.titleLabel?.text{
+            if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
+                digitOnDisplay = String(result)
+            }
+            
+            inTypingMode = false
+        }
     }
     
     /*
