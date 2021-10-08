@@ -15,7 +15,7 @@ class CalcViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.display.text! = ""
+        self.display.text! = "0"
     }
     
     var digitOnDisplay: String{
@@ -27,6 +27,7 @@ class CalcViewController: UIViewController {
             self.display.text! = newValue
         }
     }
+    
     
     var inTypingMode = false
 
@@ -44,7 +45,7 @@ class CalcViewController: UIViewController {
     let calculator = Calculator()
     
     @IBAction func operatorPressed(_ sender: UIButton) {
-        if let op = sender.titleLabel?.text{
+        if let op = sender.titleLabel!.text{
             if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
                 digitOnDisplay = String(result)
             }

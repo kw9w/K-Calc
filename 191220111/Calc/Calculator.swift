@@ -18,17 +18,17 @@ class Calculator: NSObject {
     var operations = [
         "+": Operation.BinaryOp{
             (op1, op2) in
-            return op1 + op2
+            return op2 + op1
         },
         "−": Operation.BinaryOp{
             (op1, op2) in
             return op1 - op2
         },
-        "x": Operation.BinaryOp{
+        "×": Operation.BinaryOp{
             (op1, op2) in
             return op1 * op2
         },
-        "/": Operation.BinaryOp{
+        "÷": Operation.BinaryOp{
             (op1, op2) in
             return op1 / op2
         },
@@ -47,7 +47,12 @@ class Calculator: NSObject {
         },
         "Rand": Operation.UnaryOp{
             _ in
-            return 0
+            return drand48()
+        },
+        "π": Operation.Constant(Double.pi),
+        "1/x": Operation.UnaryOp{
+            op in
+            return 1/op
         }
     ]
     
