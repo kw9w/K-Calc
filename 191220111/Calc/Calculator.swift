@@ -12,12 +12,13 @@ class Calculator: NSObject {
     var radOn:Bool = false
     
     enum Operation{
-        case UnaryOp((Double)->Double)
+        case UnaryOp((Double)->Double?)
         case BinaryOp((Double,Double)->Double)
         case EqualOp
         case Constant(Double)
         case RadOp
         case RadDeg((Double)->Double)
+        case FactOp
     }
     
     var operations = [
@@ -83,7 +84,16 @@ class Calculator: NSObject {
             op in
             return tanh(op)
         },
-        "Rad": Operation.RadOp
+        "Rad": Operation.RadOp,
+        "x!": Operation.FactOp,
+        "2√x": Operation.UnaryOp{
+            op in
+            return sqrt(op)
+        },
+        "∛x": Operation.UnaryOp{
+            op in
+            return pow(op, 1/3)
+        }
     ]
     
     struct Intermediate{
@@ -127,8 +137,39 @@ class Calculator: NSObject {
 //                    print(operand)
                     return function(operand*Double.pi/180)
                 }
+            case .FactOp:
+//                print(operand)
+                return factorial(N: operand)
             }
         }
         return nil
+    }
+    
+    func factorial(N: Double)->Double? {
+        if N==0{
+            return 1
+        }
+        else if N > 0{
+            if N != floor(N){
+                return nil
+            }
+            else{
+                let intN = Int(N)
+                var array:Array<Int> = []
+                for i in 1...intN {
+                    array.append(i)
+                }
+                return Double(array.reduce(1) {$0*$1})
+            }
+        }
+        else{
+            if N != floor(N){
+                return nil
+            }
+            else{
+                let res = factorial(N: -N)!
+                return -res
+            }
+        }
     }
 }

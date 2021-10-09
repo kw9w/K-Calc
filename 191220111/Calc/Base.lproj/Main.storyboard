@@ -102,6 +102,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="(" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txO-EK-tca"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIr-L0-mUG">
                                                                 <rect key="frame" x="79" y="0.0" width="69.5" height="51.5"/>
@@ -113,6 +116,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title=")" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7z-bT-7XT"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4o-Q1-EQF">
                                                                 <rect key="frame" x="158.5" y="0.0" width="69" height="51.5"/>
@@ -124,6 +130,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="mc" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyg-04-DsW"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaS-JP-xM3">
                                                                 <rect key="frame" x="237.5" y="0.0" width="69" height="51.5"/>
@@ -135,6 +144,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="m+" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9J-6t-8aE"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cl3-Tx-3IO">
                                                                 <rect key="frame" x="316.5" y="0.0" width="69.5" height="51.5"/>
@@ -146,6 +158,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="m-" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNf-Eg-x7f"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hH-Qg-4m3">
                                                                 <rect key="frame" x="396" y="0.0" width="69" height="51.5"/>
@@ -157,6 +172,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="mr" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g85-hM-6Ex"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -173,6 +191,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="2nd" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7A-KU-f9b"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-3V-9tJ">
                                                                 <rect key="frame" x="79" y="0.0" width="69.5" height="51"/>
@@ -184,6 +205,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^2" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW8-7A-cPP"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdB-9v-daj">
                                                                 <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
@@ -195,6 +219,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^3" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBF-Kq-mqP"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAR-PC-rZS">
                                                                 <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
@@ -206,6 +233,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^y" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcy-Ts-5Tb"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-ga-Bjp">
                                                                 <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>
@@ -217,6 +247,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="e^x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdF-ZF-oJv"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-u4-Ch6">
                                                                 <rect key="frame" x="396" y="0.0" width="69" height="51"/>
@@ -228,6 +261,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="10^x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxN-Ee-7hX"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -258,6 +294,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="2√x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxk-GJ-eNR"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb5-mD-jAU">
                                                                 <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
@@ -269,6 +308,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="∛x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpK-82-hhY"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7St-dJ-64K">
                                                                 <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
@@ -280,6 +322,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="y√x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpS-zN-5EM"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-eK-CgM">
                                                                 <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>
@@ -291,6 +336,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="ln" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9i-Wz-Zhh"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp0-kO-6mv">
                                                                 <rect key="frame" x="396" y="0.0" width="69" height="51"/>
@@ -302,6 +350,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="㏒10" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whv-c0-PcY"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -318,6 +369,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x!" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zT-xk-YAS"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-yq-r6b">
                                                                 <rect key="frame" x="79" y="0.0" width="69.5" height="51.5"/>
@@ -371,6 +425,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="e" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86g-0x-4ai"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-ub-Zol">
                                                                 <rect key="frame" x="396" y="0.0" width="69" height="51.5"/>
@@ -382,6 +439,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="EE" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKz-YU-6Sq"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -831,7 +891,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-229" y="11"/>
+            <point key="canvasLocation" x="-114" y="70"/>
         </scene>
     </scenes>
     <resources>

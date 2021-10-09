@@ -56,9 +56,15 @@ class CalcViewController: UIViewController {
                     self.RadOn.text! = "Deg"
                 }
             }
+            if (Double(digitOnDisplay) == nil){
+                digitOnDisplay = String(0)
+            }
             
             if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
                 digitOnDisplay = String(result)
+            }
+            else{
+                digitOnDisplay = String("Not A Number")
             }
             
             inTypingMode = false
