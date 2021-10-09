@@ -25,6 +25,6 @@ Thread 1: Fatal error: Unexpectedly found nil while unwrapping an Optional value
 
 Rand如果做const处理每次会返回同样的值，应做单目操作符处理。
 
-处理sin的时候对比标准计算器发现swift sin函数默认对应rad（角度制），同时处理rad，增加rad操作符和radOn bool变量处理，rad模式只对sin，cos等角/弧度操作做不同处理方案，考虑横屏模式下增加rad模式标识（显示为Rad或Deg）。
+处理sin的时候对比标准计算器发现swift sin函数默认对应rad（弧度制），而不是计算器默认的deg（角度制），这一点尤其需要注意。同时处理rad，增加rad操作符和radOn bool变量处理，rad模式只对sin，cos等角/弧度操作做不同处理方案，考虑横屏模式下增加rad模式标识（显示为Rad或Deg）。
 
 总结：尽力而行，虽然不能像标准计算器那样尽善尽美，有一些思路，但没有找到太好的解决方案。不过感觉重点还是老师示例中的enum等巧妙的操作。

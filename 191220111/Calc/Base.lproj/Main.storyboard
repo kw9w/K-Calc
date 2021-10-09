@@ -412,6 +412,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="sinh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6U-VF-1c3"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-9x-lxG">
                                                                 <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
@@ -423,6 +426,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="cosh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orj-CZ-Mpr"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Ud-sYt">
                                                                 <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
@@ -434,6 +440,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="tanh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUa-Cq-wq4"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-xf-Hsf">
                                                                 <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>

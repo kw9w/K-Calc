@@ -9,7 +9,7 @@ import UIKit
 
 class Calculator: NSObject {
     
-    var radOn = false
+    var radOn:Bool = false
     
     enum Operation{
         case UnaryOp((Double)->Double)
@@ -17,6 +17,7 @@ class Calculator: NSObject {
         case EqualOp
         case Constant(Double)
         case RadOp
+        case RadDeg((Double)->Double)
     }
     
     var operations = [
@@ -58,19 +59,31 @@ class Calculator: NSObject {
             op in
             return 1/op
         },
-        "sin": Operation.UnaryOp{
+        "sin": Operation.RadDeg{
             op in
-            print(op)
             return sin(op)
         },
-        "cos": Operation.UnaryOp{
+        "cos": Operation.RadDeg{
+            op in
+            return cos(op)
+        },
+        "tan": Operation.RadDeg{
             op in
             return tan(op)
         },
-        "tan": Operation.UnaryOp{
+        "sinh": Operation.RadDeg{
             op in
-            return tan(op)
-        }
+            return sinh(op)
+        },
+        "cosh": Operation.RadDeg{
+            op in
+            return cosh(op)
+        },
+        "tanh": Operation.RadDeg{
+            op in
+            return tanh(op)
+        },
+        "Rad": Operation.RadOp
     ]
     
     struct Intermediate{
@@ -102,7 +115,18 @@ class Calculator: NSObject {
             case .UnaryOp(let function):
                 return function(operand)
             case .RadOp:
+                radOn = !radOn
+//                print(radOn)
                 return operand
+            case .RadDeg(let function):
+                if radOn{
+                    return function(operand)
+                }
+                else{
+//                    print("on")
+//                    print(operand)
+                    return function(operand*Double.pi/180)
+                }
             }
         }
         return nil
