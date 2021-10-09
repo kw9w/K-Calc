@@ -11,11 +11,13 @@ class CalcViewController: UIViewController {
 
     @IBOutlet weak var display: UILabel!
     
+    @IBOutlet weak var RadOn: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.display.text! = "0"
+        self.RadOn.text! = "Deg"
     }
     
     var digitOnDisplay: String{
@@ -46,6 +48,15 @@ class CalcViewController: UIViewController {
     
     @IBAction func operatorPressed(_ sender: UIButton) {
         if let op = sender.titleLabel!.text{
+            if op == "Rad"{
+                if self.RadOn.text! == "Deg"{
+                    self.RadOn.text! = "Rad"
+                }
+                else{
+                    self.RadOn.text! = "Deg"
+                }
+            }
+            
             if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
                 digitOnDisplay = String(result)
             }
