@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="CalcViewController" customModule="Calc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NGd-zg-h27">
-                                <rect key="frame" x="54" y="10" width="788" height="373"/>
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OLu-Tc-bzU">
-                                        <rect key="frame" x="0.0" y="0.0" width="788" height="67"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="143.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nwd-UE-Kse">
                                                 <rect key="frame" x="0.0" y="0.0" width="53" height="67"/>
@@ -31,18 +31,30 @@
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
                                                         <color key="textColor" red="0.90209113277452457" green="0.84235946051975485" blue="0.96912484217171713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                     </label>
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iah-Lv-u4v">
-                                                <rect key="frame" x="63" y="0.0" width="725" height="67"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="143.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfx-Nv-QA4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="725" height="67"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="143.5"/>
                                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="13"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
                                                         <variation key="heightClass=regular-widthClass=compact">
                                                             <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="80"/>
                                                         </variation>
@@ -84,16 +96,16 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hXP-dw-P48">
-                                        <rect key="frame" x="0.0" y="77" width="788" height="296"/>
+                                        <rect key="frame" x="0.0" y="153.5" width="394" height="644.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kyE-Nc-E9p">
-                                                <rect key="frame" x="0.0" y="0.0" width="465" height="296"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="470.5" height="296"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yqC-zZ-IrD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="465" height="51.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="470.5" height="51.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u54-RP-iAh">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -102,12 +114,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="(" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="txO-EK-tca"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIr-L0-mUG">
-                                                                <rect key="frame" x="79" y="0.0" width="69.5" height="51.5"/>
+                                                                <rect key="frame" x="80" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -116,12 +133,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title=")" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7z-bT-7XT"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4o-Q1-EQF">
-                                                                <rect key="frame" x="158.5" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="160" y="0.0" width="70.5" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -130,12 +152,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="mc" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gyg-04-DsW"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaS-JP-xM3">
-                                                                <rect key="frame" x="237.5" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -144,12 +171,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="m+" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9J-6t-8aE"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cl3-Tx-3IO">
-                                                                <rect key="frame" x="316.5" y="0.0" width="69.5" height="51.5"/>
+                                                                <rect key="frame" x="320.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -158,12 +190,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="m-" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNf-Eg-x7f"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hH-Qg-4m3">
-                                                                <rect key="frame" x="396" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="400.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -172,6 +209,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="mr" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g85-hM-6Ex"/>
                                                                 </connections>
@@ -179,10 +221,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7u0-e9-QwT">
-                                                        <rect key="frame" x="0.0" y="61.5" width="465" height="51"/>
+                                                        <rect key="frame" x="0.0" y="61.5" width="470.5" height="51"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vh2-DX-ixb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -191,12 +233,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="2nd" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="ifPressed2nd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFo-kW-6bR"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-3V-9tJ">
-                                                                <rect key="frame" x="79" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="80" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -205,12 +252,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^2" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eW8-7A-cPP"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdB-9v-daj">
-                                                                <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="160" y="0.0" width="70.5" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -219,12 +271,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^3" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lBF-Kq-mqP"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAR-PC-rZS">
-                                                                <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -233,12 +290,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x^y" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zcy-Ts-5Tb"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cgw-ga-Bjp">
-                                                                <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="320.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -247,12 +309,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="e^x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OdF-ZF-oJv"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbm-u4-Ch6">
-                                                                <rect key="frame" x="396" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="400.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -261,6 +328,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="10^x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qxN-Ee-7hX"/>
                                                                 </connections>
@@ -268,10 +340,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6x7-xK-3d2">
-                                                        <rect key="frame" x="0.0" y="122.5" width="465" height="51"/>
+                                                        <rect key="frame" x="0.0" y="122.5" width="470.5" height="51"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1bS-3W-mQ2">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -280,12 +352,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="1/x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vn5-Wt-Tc3"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LFF-ut-NdK">
-                                                                <rect key="frame" x="79" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="80" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -294,12 +371,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="2√x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxk-GJ-eNR"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb5-mD-jAU">
-                                                                <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="160" y="0.0" width="70.5" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -308,12 +390,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="∛x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpK-82-hhY"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7St-dJ-64K">
-                                                                <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -322,12 +409,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="y√x" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dpS-zN-5EM"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZO-eK-CgM">
-                                                                <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="320.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -336,12 +428,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="ln" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g9i-Wz-Zhh"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fp0-kO-6mv">
-                                                                <rect key="frame" x="396" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="400.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -350,6 +447,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="㏒10" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="whv-c0-PcY"/>
                                                                 </connections>
@@ -357,10 +459,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Kmw-r8-7Xs">
-                                                        <rect key="frame" x="0.0" y="183.5" width="465" height="51.5"/>
+                                                        <rect key="frame" x="0.0" y="183.5" width="470.5" height="51.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQC-xH-CO6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -369,12 +471,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="x!" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zT-xk-YAS"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-yq-r6b">
-                                                                <rect key="frame" x="79" y="0.0" width="69.5" height="51.5"/>
+                                                                <rect key="frame" x="80" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -383,12 +490,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="sin" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FR9-BI-h3m"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Q6-hI-svt">
-                                                                <rect key="frame" x="158.5" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="160" y="0.0" width="70.5" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -397,12 +509,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="cos" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qi9-ED-ueU"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6xy-FY-haG">
-                                                                <rect key="frame" x="237.5" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -411,12 +528,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="tan" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="noy-2w-QQa"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dg-ic-iaS">
-                                                                <rect key="frame" x="316.5" y="0.0" width="69.5" height="51.5"/>
+                                                                <rect key="frame" x="320.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -425,12 +547,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="e" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86g-0x-4ai"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXP-ub-Zol">
-                                                                <rect key="frame" x="396" y="0.0" width="69" height="51.5"/>
+                                                                <rect key="frame" x="400.5" y="0.0" width="70" height="51.5"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -439,6 +566,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="EE" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKz-YU-6Sq"/>
                                                                 </connections>
@@ -446,10 +578,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oeR-3T-zc4">
-                                                        <rect key="frame" x="0.0" y="245" width="465" height="51"/>
+                                                        <rect key="frame" x="0.0" y="245" width="470.5" height="51"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sw-qq-Egb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -458,12 +590,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Rad" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="55H-KX-0JP"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGU-no-sIj">
-                                                                <rect key="frame" x="79" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="80" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -472,12 +609,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="sinh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RcL-EL-JGH"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-9x-lxG">
-                                                                <rect key="frame" x="158.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="160" y="0.0" width="70.5" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -486,12 +628,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="cosh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obm-ka-L5Y"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Ud-sYt">
-                                                                <rect key="frame" x="237.5" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="240.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -500,12 +647,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="tanh" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5o-l0-gau"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-xf-Hsf">
-                                                                <rect key="frame" x="316.5" y="0.0" width="69.5" height="51"/>
+                                                                <rect key="frame" x="320.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -514,12 +666,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="π" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ai-Gf-3rr"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVd-Tj-YBO">
-                                                                <rect key="frame" x="396" y="0.0" width="69" height="51"/>
+                                                                <rect key="frame" x="400.5" y="0.0" width="70" height="51"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -528,6 +685,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="Rand" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAj-mz-2ga"/>
                                                                 </connections>
@@ -537,13 +699,13 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZJW-2n-YCR">
-                                                <rect key="frame" x="475" y="0.0" width="313" height="296"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="644.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dHy-hS-rJI">
-                                                        <rect key="frame" x="0.0" y="0.0" width="313" height="51.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="121"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8q-qy-ZEa">
-                                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="51.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -552,12 +714,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="AC" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ly-RA-pMa"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x02-1Z-3JQ">
-                                                                <rect key="frame" x="80.5" y="0.0" width="71" height="51.5"/>
+                                                                <rect key="frame" x="101" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -566,12 +733,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="+/-" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="36d-Fv-z3d"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwI-k2-M7k">
-                                                                <rect key="frame" x="161.5" y="0.0" width="70.5" height="51.5"/>
+                                                                <rect key="frame" x="202" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.90335849059999995" green="0.72227300220000001" blue="0.78024111439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -580,12 +752,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="%" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="33"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cBI-id-ACA"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoP-yW-EeB">
-                                                                <rect key="frame" x="242" y="0.0" width="71" height="51.5"/>
+                                                                <rect key="frame" x="303" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.85666095799999997" green="0.70820760569999996" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -594,6 +771,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="÷" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZV-9o-cGa"/>
                                                                 </connections>
@@ -601,10 +783,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gc4-lI-PzT">
-                                                        <rect key="frame" x="0.0" y="61.5" width="313" height="51"/>
+                                                        <rect key="frame" x="0.0" y="131" width="394" height="121"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPd-LF-QV3">
-                                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -613,12 +795,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="7" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cF7-Wl-6id"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xpe-oS-AU5">
-                                                                <rect key="frame" x="80.5" y="0.0" width="71" height="51"/>
+                                                                <rect key="frame" x="101" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -627,12 +814,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="8" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VT6-mD-nv6"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvS-mv-i3X">
-                                                                <rect key="frame" x="161.5" y="0.0" width="70.5" height="51"/>
+                                                                <rect key="frame" x="202" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -641,12 +833,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="9" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GPN-aO-syW"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kk8-lG-K2Z">
-                                                                <rect key="frame" x="242" y="0.0" width="71" height="51"/>
+                                                                <rect key="frame" x="303" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.85666095799999997" green="0.70820760569999996" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -655,6 +852,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="×" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iH7-cy-THN"/>
                                                                 </connections>
@@ -662,10 +864,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G8L-5z-nfv">
-                                                        <rect key="frame" x="0.0" y="122.5" width="313" height="51"/>
+                                                        <rect key="frame" x="0.0" y="262" width="394" height="121"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzu-G1-HUS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -674,12 +876,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="4" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bch-6V-Rfg"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84W-6L-G0h">
-                                                                <rect key="frame" x="80.5" y="0.0" width="71" height="51"/>
+                                                                <rect key="frame" x="101" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -688,12 +895,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="5" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddi-Tl-cpI"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qu8-WC-7hM">
-                                                                <rect key="frame" x="161.5" y="0.0" width="70.5" height="51"/>
+                                                                <rect key="frame" x="202" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -702,12 +914,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="6" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpw-Gu-15z"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3qe-2M-HXs">
-                                                                <rect key="frame" x="242" y="0.0" width="71" height="51"/>
+                                                                <rect key="frame" x="303" y="0.0" width="91" height="121"/>
                                                                 <color key="backgroundColor" red="0.85666095799999997" green="0.70820760569999996" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -716,6 +933,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="−" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wfw-A6-0ez"/>
                                                                 </connections>
@@ -723,10 +945,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="78Q-Py-9E8">
-                                                        <rect key="frame" x="0.0" y="183.5" width="313" height="51.5"/>
+                                                        <rect key="frame" x="0.0" y="393" width="394" height="120.5"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89f-aK-TkW">
-                                                                <rect key="frame" x="0.0" y="0.0" width="70.5" height="51.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="91" height="120.5"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -735,12 +957,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="1" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jpc-Dl-9zY"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfu-8z-zAn">
-                                                                <rect key="frame" x="80.5" y="0.0" width="71" height="51.5"/>
+                                                                <rect key="frame" x="101" y="0.0" width="91" height="120.5"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -749,12 +976,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="2" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sms-FF-xgP"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-GJ-sOz">
-                                                                <rect key="frame" x="161.5" y="0.0" width="70.5" height="51.5"/>
+                                                                <rect key="frame" x="202" y="0.0" width="91" height="120.5"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -763,12 +995,17 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="3" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wgw-id-8aI"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qqW-M6-auY">
-                                                                <rect key="frame" x="242" y="0.0" width="71" height="51.5"/>
+                                                                <rect key="frame" x="303" y="0.0" width="91" height="120.5"/>
                                                                 <color key="backgroundColor" red="0.85666095799999997" green="0.70820760569999996" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -777,6 +1014,11 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="+" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OKm-N5-t92"/>
                                                                 </connections>
@@ -784,10 +1026,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RJm-mu-mT1">
-                                                        <rect key="frame" x="0.0" y="245" width="313" height="51"/>
+                                                        <rect key="frame" x="0.0" y="523.5" width="394" height="121"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sra-DV-wXb">
-                                                                <rect key="frame" x="0.0" y="0.0" width="151.5" height="51"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="192" height="121"/>
                                                                 <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                 <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -796,15 +1038,20 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="0" cornerStyle="small">
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                 </buttonConfiguration>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="13"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
                                                                 <connections>
                                                                     <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chU-yE-JBN"/>
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g3a-EI-f3A">
-                                                                <rect key="frame" x="161.5" y="0.0" width="151.5" height="51"/>
+                                                                <rect key="frame" x="202" y="0.0" width="192" height="121"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5x-h1-mrH">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="51"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="91" height="121"/>
                                                                         <color key="backgroundColor" red="0.79858095819999997" green="0.90292647619999999" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                         <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -813,12 +1060,17 @@
                                                                         <buttonConfiguration key="configuration" style="plain" title="." cornerStyle="small">
                                                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                         </buttonConfiguration>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="13"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nvt-34-txe"/>
                                                                         </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ah4-zj-SZh">
-                                                                        <rect key="frame" x="80.5" y="0.0" width="71" height="51"/>
+                                                                        <rect key="frame" x="101" y="0.0" width="91" height="121"/>
                                                                         <color key="backgroundColor" red="0.85666095799999997" green="0.70820760569999996" blue="0.90335849059999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                                         <color key="tintColor" systemColor="systemIndigoColor"/>
@@ -827,6 +1079,11 @@
                                                                         <buttonConfiguration key="configuration" style="plain" title="=" cornerStyle="small">
                                                                             <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="49"/>
                                                                         </buttonConfiguration>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                <integer key="value" value="13"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
                                                                         <connections>
                                                                             <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s3i-lP-Aov"/>
                                                                         </connections>

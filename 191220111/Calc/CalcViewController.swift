@@ -13,6 +13,7 @@ class CalcViewController: UIViewController {
     
     @IBOutlet weak var RadOn: UILabel!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -30,6 +31,7 @@ class CalcViewController: UIViewController {
     @IBOutlet weak var tenx2nd: UIButton!
     @IBOutlet weak var ln2nd: UIButton!
     @IBOutlet weak var log102nd: UIButton!
+    
     
     var digitOnDisplay: String{
         get {
