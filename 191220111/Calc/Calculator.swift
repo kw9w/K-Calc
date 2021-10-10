@@ -20,7 +20,11 @@ class Calculator: NSObject {
         case RadDeg((Double)->Double)
         case FactOp
         case RadDeg2nd((Double)->Double)
+        case MOp
     }
+    
+//    memory for m+,m-,mr
+    var memoryM:Double = 0
     
     var operations = [
         "+": Operation.BinaryOp{
@@ -171,7 +175,11 @@ class Calculator: NSObject {
         "tanh-1": Operation.UnaryOp{
             op in
             return atanh(op)
-        }
+        },
+        "mc": Operation.MOp,
+        "m+": Operation.MOp,
+        "m-": Operation.MOp,
+        "mr": Operation.MOp
     ]
     
     struct Intermediate{
@@ -227,7 +235,28 @@ class Calculator: NSObject {
             case .FactOp:
 //                print(operand)
                 return factorial(N: operand)
+            case .MOp:
+                return memoryMode(mode: operation, N: operand)
             }
+        }
+        return nil
+    }
+    
+    func memoryMode(mode: String, N: Double)->Double? {
+        if mode == "mc"{
+            memoryM = 0
+        }
+        else if mode == "m+"{
+            memoryM = memoryM + N
+        }
+        else if mode == "m-"{
+            memoryM = memoryM - N
+        }
+        else if mode == "mr"{
+            return memoryM
+        }
+        else{
+            return nil
         }
         return nil
     }
