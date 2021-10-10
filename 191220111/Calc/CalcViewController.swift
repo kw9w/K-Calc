@@ -20,6 +20,17 @@ class CalcViewController: UIViewController {
         self.RadOn.text! = "Deg"
     }
     
+    @IBOutlet weak var sin2nd: UIButton!
+    @IBOutlet weak var cos2nd: UIButton!
+    @IBOutlet weak var tan2nd: UIButton!
+    @IBOutlet weak var sinh2nd: UIButton!
+    @IBOutlet weak var cosh2nd: UIButton!
+    @IBOutlet weak var tanh2nd: UIButton!
+    @IBOutlet weak var ex2nd: UIButton!
+    @IBOutlet weak var tenx2nd: UIButton!
+    @IBOutlet weak var ln2nd: UIButton!
+    @IBOutlet weak var log102nd: UIButton!
+    
     var digitOnDisplay: String{
         get {
             return self.display.text!
@@ -32,6 +43,7 @@ class CalcViewController: UIViewController {
     
     
     var inTypingMode = false
+    var in2ndMode = false
 
     @IBAction func numberPressed(_ sender: UIButton) {
         if inTypingMode{
@@ -46,6 +58,44 @@ class CalcViewController: UIViewController {
     
     let calculator = Calculator()
     
+    
+    @IBAction func ifPressed2nd(_ sender: UIButton) {
+        if let op = sender.titleLabel!.text{
+            if op == "2nd"{
+                in2ndMode = !in2ndMode
+    //                print("on")
+    //                print(sin2nd.titleLabel!.text == "sin")
+                if in2ndMode{
+                    self.sin2nd.setTitle("sin-1", for: .normal)
+                    self.cos2nd.setTitle("cos-1", for: .normal)
+                    self.tan2nd.setTitle("tan-1", for: .normal)
+                    self.sinh2nd.setTitle("sinh-1", for: .normal)
+                    self.cosh2nd.setTitle("cosh-1", for: .normal)
+                    self.tanh2nd.setTitle("tanh-1", for: .normal)
+                    self.ex2nd.setTitle("y^x", for: .normal)
+                    self.tenx2nd.setTitle("2^x", for: .normal)
+                    self.ln2nd.setTitle("logy", for: .normal)
+                    self.log102nd.setTitle("log2", for: .normal)
+//                    self.sin2nd.titleLabel?.font =  UIFont(name: "Futura-Medium", size: 20)
+                }
+                else{
+                    self.sin2nd.setTitle("sin", for: .normal)
+                    self.cos2nd.setTitle("cos", for: .normal)
+                    self.tan2nd.setTitle("tan", for: .normal)
+                    self.sinh2nd.setTitle("sinh", for: .normal)
+                    self.cosh2nd.setTitle("cosh", for: .normal)
+                    self.tanh2nd.setTitle("tanh", for: .normal)
+                    self.ex2nd.setTitle("e^x", for: .normal)
+                    self.tenx2nd.setTitle("10^x", for: .normal)
+                    self.ln2nd.setTitle("ln", for: .normal)
+                    self.log102nd.setTitle("㏒10", for: .normal)
+//                    self.sin2nd.titleLabel?.font =  UIFont(name: "Futura-Medium", size: 20)
+                }
+            }
+        }
+    }
+    
+    
     @IBAction func operatorPressed(_ sender: UIButton) {
         if let op = sender.titleLabel!.text{
             if op == "Rad"{
@@ -56,15 +106,14 @@ class CalcViewController: UIViewController {
                     self.RadOn.text! = "Deg"
                 }
             }
+            
+            
             if (Double(digitOnDisplay) == nil){
                 digitOnDisplay = String(0)
             }
             
             if let result = calculator.performOperation(operation: op, operand: Double(digitOnDisplay)!){
                 digitOnDisplay = String(result)
-            }
-            else{
-                digitOnDisplay = String("Not A Number")
             }
             
             inTypingMode = false

@@ -72,15 +72,15 @@ class Calculator: NSObject {
             op in
             return tan(op)
         },
-        "sinh": Operation.RadDeg{
+        "sinh": Operation.UnaryOp{
             op in
             return sinh(op)
         },
-        "cosh": Operation.RadDeg{
+        "cosh": Operation.UnaryOp{
             op in
             return cosh(op)
         },
-        "tanh": Operation.RadDeg{
+        "tanh": Operation.UnaryOp{
             op in
             return tanh(op)
         },
@@ -93,6 +93,55 @@ class Calculator: NSObject {
         "∛x": Operation.UnaryOp{
             op in
             return pow(op, 1/3)
+        },
+        "x^2": Operation.UnaryOp{
+            op in
+            return pow(op, 2)
+        },
+        "x^3": Operation.UnaryOp{
+            op in
+            return pow(op, 3)
+        },
+        "10^x": Operation.UnaryOp{
+            op in
+            return pow(10, op)
+        },
+        "e^x": Operation.UnaryOp{
+            op in
+            return exp(op)
+        },
+        "ln": Operation.UnaryOp{
+            op in
+            return log(op)
+        },
+        "e": Operation.Constant(M_E),
+        "㏒10": Operation.UnaryOp{
+            op in
+            return log10(op)
+        },
+        "EE": Operation.BinaryOp{
+            (op1, op2) in
+            return op1*pow(10, op2)
+        },
+        "x^y": Operation.BinaryOp{
+            (op1, op2) in
+            return pow(op1, op2)
+        },
+        "y√x": Operation.BinaryOp{
+            (op1, op2) in
+            return pow(op1, 1/op2)
+        },
+        "sin-1": Operation.RadDeg{
+            op in
+            return asin(op)
+        },
+        "cos-1": Operation.RadDeg{
+            op in
+            return acos(op)
+        },
+        "tan-1": Operation.RadDeg{
+            op in
+            return atan(op)
         }
     ]
     

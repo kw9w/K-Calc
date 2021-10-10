@@ -29,7 +29,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="53" height="67"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="16"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <color key="textColor" red="0.90209113277452457" green="0.84235946051975485" blue="0.96912484217171713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -192,7 +192,7 @@
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c7A-KU-f9b"/>
+                                                                    <action selector="ifPressed2nd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oFo-kW-6bR"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7D7-3V-9tJ">
@@ -473,7 +473,7 @@
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6U-VF-1c3"/>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RcL-EL-JGH"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieb-9x-lxG">
@@ -487,7 +487,7 @@
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orj-CZ-Mpr"/>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="obm-ka-L5Y"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPz-Ud-sYt">
@@ -501,7 +501,7 @@
                                                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                                                 </buttonConfiguration>
                                                                 <connections>
-                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kUa-Cq-wq4"/>
+                                                                    <action selector="operatorPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p5o-l0-gau"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-xf-Hsf">
@@ -886,12 +886,22 @@
                     </view>
                     <connections>
                         <outlet property="RadOn" destination="5Kh-E2-Sd8" id="YX1-be-Nym"/>
+                        <outlet property="cos2nd" destination="4Q6-hI-svt" id="Ie9-RU-wXh"/>
+                        <outlet property="cosh2nd" destination="Ieb-9x-lxG" id="aGP-uC-Kbe"/>
                         <outlet property="display" destination="yfx-Nv-QA4" id="g4y-Cn-S5J"/>
+                        <outlet property="ex2nd" destination="cgw-ga-Bjp" id="L2g-6y-8Vo"/>
+                        <outlet property="ln2nd" destination="wZO-eK-CgM" id="ucQ-uX-R65"/>
+                        <outlet property="log102nd" destination="fp0-kO-6mv" id="6t1-vn-4Kx"/>
+                        <outlet property="sin2nd" destination="hLa-yq-r6b" id="S5i-FC-GEk"/>
+                        <outlet property="sinh2nd" destination="TGU-no-sIj" id="aRe-0c-T4X"/>
+                        <outlet property="tan2nd" destination="6xy-FY-haG" id="EIw-8M-ORo"/>
+                        <outlet property="tanh2nd" destination="FPz-Ud-sYt" id="BI4-C5-Ob8"/>
+                        <outlet property="tenx2nd" destination="sbm-u4-Ch6" id="m89-a4-hQD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-114" y="70"/>
+            <point key="canvasLocation" x="78" y="142"/>
         </scene>
     </scenes>
     <resources>
