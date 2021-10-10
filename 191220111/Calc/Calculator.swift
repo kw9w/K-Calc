@@ -19,6 +19,7 @@ class Calculator: NSObject {
         case RadOp
         case RadDeg((Double)->Double)
         case FactOp
+        case RadDeg2nd((Double)->Double)
     }
     
     var operations = [
@@ -131,17 +132,45 @@ class Calculator: NSObject {
             (op1, op2) in
             return pow(op1, 1/op2)
         },
-        "sin-1": Operation.RadDeg{
+        "sin-1": Operation.RadDeg2nd{
             op in
             return asin(op)
         },
-        "cos-1": Operation.RadDeg{
+        "cos-1": Operation.RadDeg2nd{
             op in
             return acos(op)
         },
-        "tan-1": Operation.RadDeg{
+        "tan-1": Operation.RadDeg2nd{
             op in
             return atan(op)
+        },
+        "2^x": Operation.UnaryOp{
+            op in
+            return pow(2, op)
+        },
+        "y^x": Operation.BinaryOp{
+            (op1, op2) in
+            return pow(op2, op1)
+        },
+        "logy": Operation.BinaryOp{
+            (op1, op2) in
+            return log(op1)/log(op2)
+        },
+        "log2": Operation.UnaryOp{
+            op in
+            return log2(op)
+        },
+        "sinh-1": Operation.UnaryOp{
+            op in
+            return asinh(op)
+        },
+        "cosh-1": Operation.UnaryOp{
+            op in
+            return acosh(op)
+        },
+        "tanh-1": Operation.UnaryOp{
+            op in
+            return atanh(op)
         }
     ]
     
@@ -185,6 +214,15 @@ class Calculator: NSObject {
 //                    print("on")
 //                    print(operand)
                     return function(operand*Double.pi/180)
+                }
+            case .RadDeg2nd(let function):
+                if radOn{
+                    return function(operand)
+                }
+                else{
+//                    print("on")
+//                    print(operand)
+                    return function(operand)/Double.pi*180
                 }
             case .FactOp:
 //                print(operand)
